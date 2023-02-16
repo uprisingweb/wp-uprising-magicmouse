@@ -131,7 +131,7 @@ class Wp_Uprising_Magicmouse_Admin {
 
 
 	public function wp_uprising_magicmouse_add_admin_menu(  ) {
-	    add_menu_page( esc_html__('WP Custom Cursors', 'wp-uprising-magicmouse'), esc_html__('WP Uprising MagicMouse', 'wp-uprising-magicmouse'), 'manage_options', 'wp_uprising_magicmouse', 'wp_uprising_magicmouse_render_options_page', 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTAuMjQgNTEwLjI0Ij48Y2lyY2xlIGN4PSIyNTMuNDgiIGN5PSIyNTMuNTQiIHI9IjIyMC4yMiIgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6I2ZmZjtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6MTBweCIvPjxjaXJjbGUgY3g9IjI1My40OCIgY3k9IjI1My41NCIgcj0iOS45NiIgc3R5bGU9ImZpbGw6I2ZmZjtzdHJva2U6I2ZmZjtzdHJva2UtbWl0ZXJsaW1pdDoxMDtzdHJva2Utd2lkdGg6MTVweCIvPjwvc3ZnPg==' );
+	    add_menu_page( esc_html__('WP Custom Cursors', 'wp-uprising-magicmouse'), esc_html__('WP Uprising MagicMouse', 'wp-uprising-magicmouse'), 'manage_options', 'wp_uprising_magicmouse', 'wp_uprising_magicmouse_render_options_page', 'data:image/svg+xml;base64,PHN2ZyBpZD0iYjZjZmJjMTctOGNjOC00MGViLTgzODMtYWQ5ZTI3MTg4MTQ4IiBkYXRhLW5hbWU9IkNhbHF1ZSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNiAzNCI+PGRlZnM+PHN0eWxlPi5lMjA3ZWM5Yi0xMWNlLTRkZGUtOTkzMi03NjY1YWFlNzVlZDd7ZmlsbDpub25lO3N0cm9rZTojYWFhO3N0cm9rZS1taXRlcmxpbWl0OjEwO30uYWY2MTEzMTctZTE2Yi00YmRlLWE2NzMtMzA4YzM2ZmQxNTlle2ZpbGw6I2FhYTt9PC9zdHlsZT48L2RlZnM+PGNpcmNsZSBjbGFzcz0iZTIwN2VjOWItMTFjZS00ZGRlLTk5MzItNzY2NWFhZTc1ZWQ3IiBjeD0iMTcuOTgiIGN5PSIxNi45NCIgcj0iMTQuMzgiLz48Y2lyY2xlIGNsYXNzPSJhZjYxMTMxNy1lMTZiLTRiZGUtYTY3My0zMDhjMzZmZDE1OWUiIGN4PSIxNy45OCIgY3k9IjE2Ljk0IiByPSIxLjMiLz48L3N2Zz4=' );
 
 	    // add_submenu_page( 'wp_uprising_magicmouse', esc_html__( 'Add New', 'wp-uprising-magicmouse' ), esc_html__( 'Add New', 'wp-uprising-magicmouse' ), 'manage_options', 'wpcc_add_new', 'uw_add_new_other_menu' );
 
@@ -262,12 +262,12 @@ class Wp_Uprising_Magicmouse_Admin {
 
 							<!-- -->
 							<tr>
-								<th scope="row"><label for="wpumm_point_hover_color"><?php echo esc_html__('Pointer Hover Color', 'wp-uprising-magicmouse') ?></label></th>
-								<td><input name="wp_uprising_magicmouse_settings[wpumm_point_hover_color]" type="text" id="wpumm_point_hover_color" value="<?php echo (isset($options['wpumm_point_hover_color'])?$options['wpumm_point_hover_color']:'#FFFFFF');?>" class="regular-text wpu-color-picker"></td>
-							</tr>
-							<tr>
 								<th scope="row"><label for="wpumm_point_color"><?php echo esc_html__('Pointer Color', 'wp-uprising-magicmouse') ?></label></th>
 								<td><input name="wp_uprising_magicmouse_settings[wpumm_point_color]" type="text" id="wpumm_point_color" value="<?php echo (isset($options['wpumm_point_color'])?$options['wpumm_point_color']:'#FFFFFF');?>" class="regular-text wpu-color-picker"></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="wpumm_point_hover_color"><?php echo esc_html__('Pointer Hover Color', 'wp-uprising-magicmouse') ?></label></th>
+								<td><input name="wp_uprising_magicmouse_settings[wpumm_point_hover_color]" type="text" id="wpumm_point_hover_color" value="<?php echo (isset($options['wpumm_point_hover_color'])?$options['wpumm_point_hover_color']:'#FFFFFF');?>" class="regular-text wpu-color-picker"></td>
 							</tr>
 
 							<!-- -->

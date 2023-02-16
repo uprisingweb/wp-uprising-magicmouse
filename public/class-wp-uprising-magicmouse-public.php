@@ -128,12 +128,15 @@ class Wp_Uprising_Magicmouse_Public {
 			<?php if(isset($options["wpumm_circle_color"])):?>
 			body #magicMouseCursor { border-color: <?= $options["wpumm_circle_color"] ?>; }
 			<?php endif;?>
+
 			<?php if(isset($options["wpumm_circle_width"])):?>
 			body #magicMouseCursor { border-width: <?= $options["wpumm_circle_width"] ?>px; }
 			<?php endif;?>
+
 			<?php if(isset($options["wpumm_point_color"])):?>
 			body #magicPointer { background: <?= $options["wpumm_point_color"] ?>; }
 			<?php endif;?>
+
 			<?php if(isset($options["wpumm_point_hover_color"])):?>
 			body #magicPointer.is-hover { background: <?= $options["wpumm_point_hover_color"] ?>; }
 			<?php endif;?>
@@ -141,12 +144,15 @@ class Wp_Uprising_Magicmouse_Public {
 			<?php if(isset($options["wpumm_blur_color"])):?>
 			body #magicPointer.pointer-blur { border-color: <?= $options["wpumm_blur_color"] ?>; box-shadow: 0px 0px 15px -5px <?= $options["wpumm_blur_color"] ?> }
 			<?php endif;?>
+
 			<?php if(isset($options["wpumm_blur_width"])):?>
 			body #magicPointer.pointer-blur { border-width: <?= $options["wpumm_blur_width"] ?>px; }
 			<?php endif;?>
+
 			<?php if(isset($options["wpumm_overlay_color"])):?>
-			body #magicPointer.pointer-overlay { box-shadow: 0px 0px 15px -5px <?= $options["wpumm_overlay_color"] ?>; }
-			<?php endif;?>			
+			body #magicPointer.pointer-overlay { box-shadow: 0px 0px 15px -5px <?= $options["wpumm_overlay_color"] ?>;background: <?= $options["wpumm_overlay_color"] ?>; }
+			<?php endif;?>	
+					
 			<?php if(isset($options["wpumm_overlay_blend"])):?>
 			body #magicPointer.pointer-overlay { mix-blend-mode: <?= $options["wpumm_overlay_blend"] ?>; }
 			<?php endif;?>
